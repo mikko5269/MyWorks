@@ -1,0 +1,78 @@
+﻿@{
+    ViewData["Title"] = "店家形象資訊";
+}
+<div class="row">
+    <img id="im2" src="~/images/local.png" class="rounded col-md-12" alt="Cinque Terre">
+</div>
+<br />
+<div class="row" >
+    <div class="col-lg-4" style="text-align:center">
+        <img src="~/images/map.gif" width="330" height="680" usemap="#ImageMap01">
+        <map name="ImageMap01">
+            <area alt="a" shape="rect" coords="220,65,280,90" href="#" onclick="showHint(2)">
+            <area alt="b" shape="rect" coords="95,425,155,450" href="#" onclick="showHint(1)">
+        </map>
+    </div>
+    <br />
+    <div class="col-lg-8">
+
+        <input id="Text1" type="text" class="form-control" placeholder="請輸入關鍵字" onkeyup="showHint(0)" />
+        <br />
+        <div style="overflow:auto;height:600px;">
+            <table ID="tab1" style="width: 100%; font-size:small; vertical-align:middle;" class="table table-striped">
+                <thead class="table-thead">
+                    <tr>
+                        <td class="ShopName">店名</td>
+                        <td class="googleMap"></td>
+                        <td class="phome">電話</td>
+                        <td class="address">地址</td>
+                    </tr>
+                </thead>
+                <tbody id="myTable">
+                    <tr>
+                        <td><a href="Contact.aspx" target="_blank">湯姆實體沙龍</a></td>
+                        <td><a href="https://goo.gl/maps/iREB1gHmAEAXWA1K6" target="_blank"><img src="~/images/googleMap.png" class="rounded" alt="Cinque Terre"></a></td>
+                        <td>07-8111111</td>
+                        <td>高雄市前鎮區</td>
+                    </tr>
+                    <tr>
+                        <td><a href="Contact.aspx" target="_blank">快速剪髮</a></td>
+                        <td><a href="https://goo.gl/maps/iREB1gHmAEAXWA1K6" target="_blank"><img src="~/images/googleMap.png" class="rounded" alt="Cinque Terre"></a></td>
+                        <td>07-8333333</td>
+                        <td>高雄市鼓山區</td>
+                    </tr>
+                    <tr>
+                        <td><a href="Contact.aspx" target="_blank">剪髮快手</a></td>
+                        <td><a href="https://goo.gl/maps/iREB1gHmAEAXWA1K6" target="_blank"><img src="~/images/googleMap.png" class="rounded" alt="Cinque Terre"></a></td>
+                        <td>0929999999</td>
+                        <td>高雄市苓雅區</td>
+                    </tr>
+                    <tr>
+                        <td><a href="Contact.aspx" target="_blank">熊熊叔叔剪髮</a></td>
+                        <td><a href="https://goo.gl/maps/iREB1gHmAEAXWA1K6" target="_blank"><img src="~/images/googleMap.png" class="rounded" alt="Cinque Terre"></a></td>
+                        <td>0929992345</td>
+                        <td>高雄市楠梓區</td>
+                    </tr>
+                    <tr>
+                        <td><a href="Contact.aspx" target="_blank">火速理髮</a></td>
+                        <td><a href="https://goo.gl/maps/iREB1gHmAEAXWA1K6" target="_blank"><img src="~/images/googleMap.png" class="rounded" alt="Cinque Terre"></a></td>
+                        <td>07-8444444</td>
+                        <td>台北市中正區</td>
+                    </tr>
+                    <tr>
+                        <td><a href="Contact.aspx" target="_blank">時尚快手</a></td>
+                        <td><a href="https://goo.gl/maps/iREB1gHmAEAXWA1K6" target="_blank"><img src="~/images/googleMap.png" class="rounded" alt="Cinque Terre"></a></td>
+                        <td>0928888888</td>
+                        <td>台北市信義區</td>
+                    </tr>
+                    <tr>
+                        <td><a href="Contact.aspx" target="_blank">大叔剪髮</a></td>
+                        <td><a href="https://goo.gl/maps/iREB1gHmAEAXWA1K6" target="_blank"><img src="~/images/googleMap.png" class="rounded" alt="Cinque Terre"></a></td>
+                        <td>0923332345</td>
+                        <td>台北市松山區</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </div>

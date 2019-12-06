@@ -1,0 +1,21 @@
+﻿.table-thead {
+    font-size:16px;
+    font-weight:bold;
+    text-align:center;
+}
+
+.ShopName {
+    width: 100px;
+}
+
+.googleMap{
+    width:50px;
+}
+
+.phome {
+    width:100px;
+}
+
+.address{
+    width:auto;
+}
